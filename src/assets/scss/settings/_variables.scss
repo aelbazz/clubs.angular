@@ -1,0 +1,39 @@
+//==  branding from css to root branding 
+$branding-path:'/assets/' !default;
+
+$default-behaviour: true; //  true or false : true is recommended
+$fa : FontAwesome;
+$fa-font-path: $branding-path+"fonts/fontawesome";
+$mdi: 'Material Design Icons';
+//== font-families
+//
+// font family 
+$defaultFont: 'HelveticaNeueW23SKY';
+$font-family-default: $defaultFont,
+sans-serif;
+$font-numbers-default : Myriad Pro,
+Arial,
+sans-serif;
+$fonts-map-default: ((family: '#{$defaultFont}',
+        weight: 400,
+        path: '#{$defaultFont}/#{$defaultFont}-Regular'
+    ),
+    (family: '#{$defaultFont}',
+        weight: 700,
+        path: '#{$defaultFont}/#{$defaultFont}-Bold'
+    ));
+// font family 
+$reverseFontName: 'HelveticaNeueW23SKY';
+$font-family-reverse: '#{$reverseFontName}',
+sans-serif;
+$font-numbers-reverse : Myriad ar,
+Arial,
+sans-serif;
+$fonts-map-reverse: ((family: '#{$defaultFont}',
+        weight: 400,
+        path: '#{$defaultFont}/#{$defaultFont}-Regular'
+    ), 
+    (family: '#{$defaultFont}',
+        weight: 700,
+        path: '#{$defaultFont}/#{$defaultFont}-Bold'
+    ));

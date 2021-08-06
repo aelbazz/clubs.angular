@@ -1,0 +1,52 @@
+<header class="header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/logo.svg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto header-menu">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">مباريات الفريق</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">عن الفريق</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">تواصل معنا</a>
+          </li>
+        </ul>
+        <div class="my-2 my-lg-0 d-flex">
+          <ul class="navbar-nav header-social">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-instagram-square"></i></a>
+            </li>
+          </ul>
+          <button class="navbar-toggler" type="button" class="btn header-reserveBtn" (click)="onSwitchLanguages()">
+            <i class="fas fa-ticket-alt"></i>
+            احجز تذكرتك
+
+          </button>
+          <button class="navbar-toggler" type="button" class="btn btn-primary mr-2" (click)="onSwitchLanguages()">
+            {{ "general.language" | translate }}
+          </button>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</header>

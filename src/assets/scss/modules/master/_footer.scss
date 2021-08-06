@@ -1,0 +1,67 @@
+.footer {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    background-color: $secondary;
+    text-align: center;
+    padding: 50px 0;
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .social {
+        margin-bottom: 55px;
+        text-align: center;
+
+        &-list {
+            display: block;
+            list-style: none;
+            padding-top: 5px;
+        }
+
+        &-item {
+            border-radius: 50%;
+            background-color: $light;
+            padding: 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+
+            &:not(:last-child) {
+                margin-#{$right}: 10px;
+            }
+        }
+
+        &-image {
+            width: 30px;
+        }
+    }
+
+    &-contact {
+        border-top: 1px solid rgba($color: #868686, $alpha: .35);
+    }
+
+    .menu {
+        margin-top: 50px;
+        font-size: 24px;
+        justify-content: center;
+        flex-direction: column;
+
+        @include bp(sm) {
+            flex-direction: row;
+        }
+
+        .item {
+            color: $light;
+            align-items: center;
+
+            @include bp(sm) {
+                &:not(:last-child) {
+                    margin-#{$right}: 70px;
+                }
+            }
+
+        }
+
+    }
+}

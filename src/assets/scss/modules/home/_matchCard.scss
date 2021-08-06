@@ -1,0 +1,118 @@
+.matchCard {
+  position: relative;
+  width: 350px;
+  box-shadow: 0 8px 20px rgba($color: $dark, $alpha: .08);
+  margin: 10px 20px;
+  transform-origin: 50% 50%;
+  @include trans(); 
+
+  &-content {
+    padding: 20px 20px 30px;
+  }
+
+  &-club {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  &-details {
+    padding: 0;
+  }
+
+  &-logo {
+    width: 50px;
+    margin: 0 auto 15px;
+
+    @include bp(sm) {
+      width: 66px;
+    }
+
+    .image {
+      width: 100%;
+    }
+  }
+
+  &-vsLabel {
+    font-weight: 700;
+    color: $secondary;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 5px;
+
+    @include bp(sm) {
+      font-size: 28px;
+      line-height: 37px;
+    }
+  }
+
+  &-stadium {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 10px;
+
+    @include bp(sm) {
+      font-size: 16px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-status {
+    color: $primary;
+    font-weight: 700;
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 20px;
+
+    @include bp(sm) {
+      margin-top: 30px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    &.text-danger {
+      margin-bottom: 50px;
+    }
+  }
+
+  &-goals {
+    color: $success;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+
+    @include bp(sm) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  &-reserveBtn {
+    color: $light;
+    font-size: 14px;
+    padding: 5px 12px;
+    margin: 0 auto;
+  }
+
+  &-footer {
+    padding: 10px;
+    font-size: 12px;
+    color: $light;
+    background: $secondary;
+
+    &-title {
+      line-height: 21px;
+      margin: 0;
+    }
+
+    &-date {
+      padding-#{$left}: 5px;
+    }
+  }
+
+  &-reserveBtn{
+      
+  }
+
+}
