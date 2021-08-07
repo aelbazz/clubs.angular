@@ -20,6 +20,7 @@ import { TeamMatchesComponent } from './views/home/team-matches/team-matches.com
 import { AboutTeamComponent } from './views/home/about-team/about-team.component';
 import { SponsorsComponent } from './views/home/sponsors/sponsors.component';
 import { ChampionshipsComponent } from './views/home/championships/championships.component';
+import { RouterModule } from '@angular/router';
 
 export function TranslationLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -30,7 +31,7 @@ export function TranslationLoaderFactory(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    HttpClientModule,
+    HttpClientModule, 
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
