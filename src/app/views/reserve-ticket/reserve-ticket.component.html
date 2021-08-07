@@ -1,8 +1,86 @@
-<h1 class="reserveTicket-title"> 
+<section class="">
+  <div class="container">
+    <!-- --------------------------------------------------------------------- -->
+    <div class="reserveTicketBanner">
+      <div class="reserveTicketBanner-main">
+        <div class="reserveTicketBanner-content">
+          <div class="row ">
+            <div class="col-4">
+              <div class="reserveTicketBanner-logo">
+                <img src="assets/images/DUMMY/alfaisaly-logo.png" alt="" class="image">
+              </div>
+              <h5 class="reserveTicketBanner-club">الفيصلي</h5>
 
-  </h1>
-  <p class="reserveTicket-desc"> 
+            </div>
 
-  </p>
+            <div class="col-4">
+              <div class="reserveTicketBanner-vsLabel">
+                <span class="reserveTicketBanner-dash">-</span>
+                <span class="reserveTicketBanner-status">القادمة </span>
+                <span class="reserveTicketBanner-dash">-</span>
+              </div>
+              <p class="reserveTicketBanner-status text-danger ">كأس خادم الحرمين الشريفين</p>
 
-  <router-outlet></router-outlet>
+            </div>
+
+            <div class="col-4">
+              <div class="reserveTicketBanner-logo">
+                <img src="assets/images/DUMMY/alnassr_logo.png" alt="" class="image">
+              </div>
+              <h5 class="reserveTicketBanner-club">النصر</h5>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="reserveTicketBanner-details">
+        <h2 class="reserveTicketBanner-item">
+          <i class="far fa-calendar-alt"></i>
+          <span class="text">
+            الخميس 24 محرم 1442 - 13:00
+
+          </span>
+        </h2>
+        <h2 class="reserveTicketBanner-item">
+          <i class="far fa-calendar-alt"></i>
+          <span class="text">
+            الخميس 24 محرم 1442 - 13:00
+
+          </span>
+        </h2>
+      </div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- ==========================[ Wizard ]======================= -->
+    <div class="reserveTicketWizard">
+      <div class="reserveTicketWizard-tabs">
+        <h1 class="reserveTicketWizard-title">احجز تذكرتك
+        </h1>
+        <p class="reserveTicketWizard-desc">أنت على بعد دقائق من الحصول على التذاكر الخاصة بك. يرجى ملء الخطوات أدناه
+        </p>
+        <ul class="reserveTicketWizard-items">
+          <!-- steps titles  -->
+          <li *ngFor="let title of ['selectClub', 'chooseTicket', 'info', 'review', 'payment'];let idx=index"
+            class="  reserveTicketWizard-item" [ngClass]="{'active': idx === currentStep}">
+            <span class="reserveTicketWizard-title">{{"reserveTicket." + title | translate }}</span>
+            <p class="reserveTicketWizard-step">
+              <span class="number">{{idx + 1}} </span>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="reserveTicketWizard-content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+    <div class="popup-footer">
+      <button type="button" class="btn btn-primary mb-3">{{"general.next" | translate }}</button>
+      <button type="button" class="btn btn-primary mb-3">{{"general.previous" | translate }}</button>
+    </div>
+
+    <!-- --------------------------------------------------------------------- -->
+  </div>
+</section>

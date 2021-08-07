@@ -5,6 +5,7 @@ import { HomeComponent } from 'src/app/views/home/home.component';
 import { ChooseTicketComponent } from 'src/app/views/reserve-ticket/choose-ticket/choose-ticket.component';
 import { InfoComponent } from 'src/app/views/reserve-ticket/info/info.component';
 import { PaymentComponent } from 'src/app/views/reserve-ticket/payment/payment.component';
+import { ReserveTicketComponent } from 'src/app/views/reserve-ticket/reserve-ticket.component';
 import { ReviewComponent } from 'src/app/views/reserve-ticket/review/review.component';
 import { SelectClubComponent } from 'src/app/views/reserve-ticket/select-club/select-club.component';
 
@@ -24,6 +25,7 @@ const routes: Routes = [
       },
       {
         path: 'reserve-ticket',
+        component: ReserveTicketComponent,
         children: [
           {
             path: '',
