@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LanguageService } from 'src/app/shared/services/language/language.service';
+import { Router } from '@angular/router';
+import { LanguageService } from 'src/app/shared/services/language/language.service'; 
 
 @Component({
   selector: 'app-header',
@@ -7,8 +8,11 @@ import { LanguageService } from 'src/app/shared/services/language/language.servi
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  constructor(private languageService: LanguageService) {
+  constructor(private languageService: LanguageService,public router:Router) {
     this.languageService.loadDefaultLangsAndStyles();
+  }
+  onReserveTicket() {
+    this.router.navigate(['reserve-ticket/select-club']) 
   }
   public onSwitchLanguages() {
     this.languageService.switchLanguages();
