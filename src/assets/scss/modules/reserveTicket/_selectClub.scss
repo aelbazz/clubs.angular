@@ -1,0 +1,32 @@
+.selectClub {
+
+  &-card {
+    text-align: center;
+    border: 1px solid $secondary;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    padding: 20px;
+    transition:.5s;
+    transition-property: transform, text-shadow;
+    &:hover {
+      border: 1px solid $primary;
+      box-shadow: 0 0 11px $secondary;
+      transform: scale(1.1);
+    }
+  }
+  &-logo {
+
+    padding: 20px 0 10px;
+    .image{
+      width: 50%;
+    }
+  }
+  &-name {
+    padding-top: 20px;
+    color: $secondary;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+
+}

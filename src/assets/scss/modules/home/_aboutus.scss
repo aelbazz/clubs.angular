@@ -1,0 +1,34 @@
+.l-homeAbout {
+  background: $dark;
+  padding: 100px 0px;
+  color: $light;
+}
+.homeAbout {
+  &-title{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 64px;
+  }
+  &-desc{
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 50px;
+  }
+  &-cover{
+    width: 85%;
+  }
+  &-socialLinks{
+    padding: 50px 0;
+
+  }
+  &-socialTitle{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 36px;
+  }
+  &-icon{
+    color: $light;
+    font-size: 35px;
+    margin-left: 10%;
+  }
+}

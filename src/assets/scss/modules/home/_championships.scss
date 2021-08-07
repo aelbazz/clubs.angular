@@ -1,0 +1,36 @@
+.l-championships {
+  background: $primary;
+  padding: 100px 0px;
+  color: $light;
+}
+.championships {
+  &-title{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  &-card{
+    background: $dark;
+    padding: 30px 25px 30px 40px;
+    overflow: auto;
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+  &-details{
+    display: inline-block;
+  }
+  &-num{
+    font-size: 78px;
+    font-weight: bold;
+    text-shadow: -5px 0px 3px $black;
+  }
+  &-name{
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0;
+  }
+ &-cupImg{
+   width: 110px;
+   float: #{$right};
+ }
+}

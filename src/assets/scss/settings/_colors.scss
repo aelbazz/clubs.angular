@@ -3,27 +3,28 @@
 $primary: #007bff; // ==== $primary  ====
 $secondary: #6c757d; // ==== secondary ====
 $tertiary: #6f42c1; // ==== tertiary ====
-$success: #28a745; // ==== success   ====  
-$info: #17a2b8; // ==== info      ====     
-$warning: #ffc107; // ==== warning   ====  
+$success: #28a745; // ==== success   ====
+$info: #17a2b8; // ==== info      ====
+$warning: #ffc107; // ==== warning   ====
 $danger: #dc3545; // ==== danger    ====
 $light: #f8f9fa; // ==== light     ====
-$dark: #343a40; // ==== dark      ==== 
+$dark: #343a40; // ==== dark      ====
 
 // ====================  HandOff Colors
-$primary: #811D1D; // ==== $primary  ====  
-$secondary: #2D3A3A; // ==== secondary ====  
-// $tertiary: #0F2837; // ==== tertiary ====  
-$success: #387916; // ==== success   ====  
-$info: #2783BC; // ==== info      ====     
-$warning: #F3BC47; // ==== warning   ====  
-$danger: #9A3727; // ==== danger    ==== 
+$primary: #811D1D; // ==== $primary  ====
+$secondary: #2D3A3A; // ==== secondary ====
+// $tertiary: #0F2837; // ==== tertiary ====
+$success: #387916; // ==== success   ====
+$info: #2783BC; // ==== info      ====
+$warning: #F3BC47; // ==== warning   ====
+$danger: #9A3727; // ==== danger    ====
 $light: #ffffff; // ==== light     ====
-$dark: #343a40; // ==== dark      ==== 
+$dark: #343a40; // ==== dark      ====
+$black: #000000; // ==== black      ====
 
 // Body
 //
-// Settings for the `<body>` element. 
+// Settings for the `<body>` element.
 $body-bg: #ffffff;
 $input-bg:#F7F7F7;
 $body-color:  #071927;
@@ -36,7 +37,7 @@ $link-decoration: none;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: none;
 
-// Texts 
+// Texts
 $txt: $body-color;
 $txt2: $light;
 $txt3: #BCBEBE;
@@ -46,4 +47,3 @@ $header-color: #fff2f8;
 
 // ==================== UX Pallete color
 $pallete1: $primary !default;
- 
