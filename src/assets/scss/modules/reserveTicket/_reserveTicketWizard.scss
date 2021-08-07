@@ -1,0 +1,103 @@
+.reserveTicketWizard {
+  position: relative;
+  display: flex;
+
+  &-title {
+    color: #071927;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 47px;
+  }
+ 
+
+  &-tabs {
+    flex: 0 0 260px;
+    max-width: 260px;
+    border: 1px solid rgba($color: #A1A1A1, $alpha:.5);
+    background-color: rgba($color: #A1A1A1, $alpha:.5);
+    border-radius: 0 16px 16px 0;
+    border-#{$right}-width: 0;
+    padding: 30px;
+    color: #A1A1A1;
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  &-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+
+  &-item {
+    border-top: 1px solid #E4E4E4;
+    border-bottom: 1px solid #E4E4E4;
+    padding: 15px 10px;
+    font-size: 18px;
+    line-height: 24px;
+    color: $primary;
+
+
+    &:not(:last-child) {}
+
+
+    &.active {
+      background-color: rgba($color: $primary, $alpha: .05);
+      border-bottom-color: currentColor;
+    }
+
+    &.active~.popup-header-item {
+      color: #C7C7C7;
+    }
+  }
+ 
+
+  &-step {
+    display: inline-block;
+
+    .number {}
+  }
+
+  &-icon {
+    margin-#{$right}: 5px;
+
+    @include bp(xs) {
+      margin-#{$right}: 10px;
+    }
+
+    @include bp(sm) {
+      margin-#{$right}: 15px;
+    }
+
+    @include bp(md) {
+      margin-#{$right}: 25px;
+    }
+  }
+
+  // =====================
+  &-content {
+    border: 1px solid rgba($color: #A1A1A1, $alpha:.5);
+    border-radius: 16px 0 0 16px;
+    flex: 0 0 calc(100% - 260px);
+    max-width: calc(100% - 260px);
+  }
+
+  &-prevBtn,
+  &-nextBtn {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @include bp(xs) {
+      width: 50%;
+    }
+
+    @include bp(sm) {
+      width: auto;
+    }
+  }
+
+}

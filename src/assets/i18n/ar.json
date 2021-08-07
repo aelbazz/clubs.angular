@@ -2,6 +2,15 @@
   "general": {
     "language": "English",
     "login": "تسجيل دخول",
-    "logout": "تسجيل خروج"
+    "logout": "تسجيل خروج",
+    "next": "التالي",
+    "previous": "السابق"
+  },
+  "reserveTicket": {
+    "selectClub": "حدد ناديك",
+    "chooseTicket": "اختر تذكرتك",
+    "info": "معلوماتك",
+    "review": "مراجعة الطلب ",
+    "payment": "الدفع"
   }
 }

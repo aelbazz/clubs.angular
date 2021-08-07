@@ -1,11 +1,12 @@
  // ###  ============  [ Master page ]  
- @import "master/header"; // Ahmed Elbaz  
- @import "master/footer";
+ @import "shared/header"; // Ahmed Elbaz  
+ @import "shared/footer";
+ @import "shared/matchCard";
 
 
 
- // ###  ============  [ Home page ]  
- @import "home/matchCard"; // Ahmed Elbaz  - 05-18-2018
+ // ###  ============  [ Home page ]   
  @import "home/hero"; // Ahmed Elbaz  - 05-18-2018
 
- @import "reserveTicket/reserveTicket"; // Ahmed Elbaz  - 05-18-2018
+ @import "reserveTicket/reserveTicketBanner"; // Ahmed Elbaz  - 05-18-2018
+ @import "reserveTicket/reserveTicketWizard"; // Ahmed Elbaz  - 05-18-2018

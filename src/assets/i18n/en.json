@@ -2,6 +2,16 @@
   "general": {
     "language": "العربية",
     "login": "Log In",
-    "logout": "Log Out"
+    "logout": "Log Out",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "reserveTicket": {
+    "selectClub": "Select club",
+    "chooseTicket": "Choose ticket",
+    "info": "Your info",
+    "review": "Review the request",
+    "payment": "Payment"
+
   }
 }
