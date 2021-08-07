@@ -8,13 +8,20 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
-import { HeroComponent } from './views/hero/hero.component';
+import { HeroComponent } from './views/home/hero/hero.component';
+import { ReserveTicketComponent } from './views/reserve-ticket/reserve-ticket.component';
+import { PaymentComponent } from './views/reserve-ticket/payment/payment.component';
+import { ReviewComponent } from './views/reserve-ticket/review/review.component';
+import { InfoComponent } from './views/reserve-ticket/info/info.component';
+import { ChooseTicketComponent } from './views/reserve-ticket/choose-ticket/choose-ticket.component';
+import { SelectClubComponent } from './views/reserve-ticket/select-club/select-club.component';
+import { ContactusComponent } from './views/home/contactus/contactus.component';
 
 export function TranslationLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeroComponent],
+  declarations: [AppComponent, HomeComponent, HeroComponent, ReserveTicketComponent, PaymentComponent, ReviewComponent, InfoComponent, ChooseTicketComponent, SelectClubComponent, ContactusComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
