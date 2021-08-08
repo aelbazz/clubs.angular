@@ -1,0 +1,19 @@
+.l-homeSponsors {
+  padding: 50px 0;
+}
+.homeSponsors {
+  &-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: $dark;
+  }
+  &-logo {
+    border: 1px solid rgba($dark,0.2);
+    border-radius: 1px;
+    padding: 10px 5px;
+  }
+  &-image {
+    width: 95%;
+  }
+}
