@@ -81,5 +81,13 @@
 
      &-decreaseBtn {}
  }
+ .divider {
+  &-dashed {
+    border-top:3px dashed rgba($color: $dark, $alpha: 0.3);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 
  //  ==========
