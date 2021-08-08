@@ -1,0 +1,82 @@
+.l-chooseTicket {
+  padding: 10px;
+}
+.chooseTicket {
+  &-card {
+    padding: 10px;
+    border: 1px solid rgba($color: $dark, $alpha: 0.3);
+    border-radius: 16px;
+  }
+  &-details {
+    background: rgba($color: $dark, $alpha: 0.1);
+    padding: 50px 30px;
+    border-radius: 16px;
+    text-align: center;
+  }
+  &-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: $dark;
+    padding: 20px 0;
+  }
+  &-label {
+    font-size: 14px;
+    color: rgba($dark,0.2);
+  }
+  &-price {
+    font-size: 14px;
+    color: rgba($dark,0.2);
+    .num{
+      font-size: 32px;
+      font-weight: bold;
+      color: $primary;
+    }
+  }
+  &-divider {
+    &::after {
+      content: "";
+      display: block;
+      border-radius: 50%;
+      background: $light;
+      width: 21px;
+      height: 39px;
+      position: relative;
+      right: 107%;
+      top: -60px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      border-radius: 50%;
+      background: $light;
+      width: 21px;
+      height: 39px;
+      position: relative;
+      left: 40px;
+      top: -19px;
+    }
+  }
+  &-counter {
+    padding: 20px 30px;
+    background: $light;
+    border: 1px solid rgba($color: $dark, $alpha: 0.3);
+    border-radius: 16px;
+    margin-top: 30px;
+  }
+  &-plus {
+    font-size: 20px;
+    color: $success;
+    font-family: "Font Awesome 5 Free";
+    float: #{$left};
+  }
+  &-count {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &-minus {
+    font-size: 20px;
+    color: $danger;
+    font-family: "Font Awesome 5 Free";
+    float: #{$right};
+  }
+}
