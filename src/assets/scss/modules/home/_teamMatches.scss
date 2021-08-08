@@ -28,5 +28,9 @@
     &-nextBtn {}
   }
 
-  &-matchs {}
+  &-matchs {
+    .matchCard {
+border-radius: 8px;
+    }
+  }
 }

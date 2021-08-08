@@ -41,14 +41,7 @@
     }
   }
 
-  &-match {
-    max-width: 450px;
 
-    &-card {
-      margin-bottom: 10px;
-
-    }
-  }
 
   &-seeMoreBtn {
     width: 100%;
@@ -57,5 +50,43 @@
     font-size: 16px;
     font-weight: bold;
     line-height: 28px;
+  }
+
+  // =================
+
+  &-match {
+    max-width: 450px;
+
+    &-card {
+      margin-bottom: 10px;
+
+    }
+
+    &-timeWrapper {
+      display: flex;
+      width: 100%;
+      
+    }
+
+    &-label {
+      flex: 0 0 50%;
+      max-width: 50%;
+      background: linear-gradient(180deg, rgba(#000000, .24) 0%, rgba(#ffffff, .24) 100%);
+      .text{
+        margin-bottom: 0;
+      }
+    }
+
+    &-remainingTime {
+      flex: 0 0 50%;
+      max-width: 50%;
+      background: linear-gradient(180deg, rgba(#ffffff, .24) 0%, rgba(#000000, .24) 100%);
+    }
+
+    &-time {}
+
+    &-timeLabel {
+      margin-bottom: 0;
+    }
   }
 }
