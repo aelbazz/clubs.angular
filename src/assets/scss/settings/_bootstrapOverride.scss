@@ -1,55 +1,14 @@
  // ===================================== floating form control 
- .form-group-custom {
-     position: relative;
- }
-
- .form-control {
+ 
+ .form-group {
 
 
-     &-label {
-         font-size: 20px;
-         line-height: 30px;
-         #{$right}: initial;
-         top: 20px;
-         #{$left}: 40px;
-         color: rgba($secondary, .65);
-         pointer-events: none;
-         letter-spacing: .009375em;
-         position: absolute;
-         transform-origin: $left top;
-         transition: top 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1);
-         line-height: 1.15rem;
-         text-overflow: ellipsis;
-         white-space: nowrap;
-         cursor: text;
-         will-change: transform;
+     label {
+        color: #A1A1A1; 
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 25px;
+        margin-bottom: 10px;
      }
-
-     &:focus+.form-control-label {
-         color: $primary;
-     }
-
-     &:focus+.form-control-label,
-     &-floatingLabel {
-         transform: scale(0.75);
-         top: 6px;
-     }
-
-     @include bp(isMobile) {
-         height: 45px;
-         border-radius: 4px;
-         padding-left: 28px;
-         padding-right: 28px;
-
-         &-label {
-             font-size: 16px;
-             top: 13px;
-             #{$left}: 28px;
-         }
-
-         &:focus+.form-control-label,
-         &-floatingLabel {
-             top: 3px;
-         }
-     }
+ 
  }

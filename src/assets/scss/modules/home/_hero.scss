@@ -1,24 +1,33 @@
-.l-hero{
-    position: relative;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    background-color: #242122;
-    color:$light;
+.l-hero {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #242122;
+  color: $light;
 }
-.hero{
-  &-label{
-    font-size: 60px;
-    text-shadow: 4px 5px 6px 0 rgba(0,0,0,0.5);
+
+.hero {
+  &-details {
+    width: 80%;
+
   }
+
+  &-label {
+    font-size: 60px;
+    text-shadow: 4px 5px 6px 0 rgba(0, 0, 0, 0.5);
+  }
+
   &-title {
     font-size: 60px;
-  font-weight: bold;
-  text-shadow: 4px 5px 6px 0 rgba(0,0,0,0.5);
+    font-weight: bold;
+    text-shadow: 4px 5px 6px 0 rgba(0, 0, 0, 0.5);
   }
+
   &-desc {
     font-size: 16px;
-    padding: 5px 0px 5px  25px;
+    padding: 5px 0px 5px 25px;
   }
+
   &-contactusBtn {
     font-size: 16px;
     color: $light;
@@ -26,8 +35,27 @@
     border-radius: 8px;
     padding: 15px 50px;
     background: rgba($color: $dark, $alpha: 0.5);
+
     &:hover {
-      color:$primary;
+      color: $primary;
     }
+  }
+
+  &-match {
+    max-width: 450px;
+
+    &-card {
+      margin-bottom: 10px;
+
+    }
+  }
+
+  &-seeMoreBtn {
+    width: 100%;
+    background-color: rgba($color: #071927, $alpha: .21);
+    color: #FFF100;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
   }
 }
