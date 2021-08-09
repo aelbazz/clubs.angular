@@ -7,8 +7,8 @@ export const environment = {
   defaultLanguage: "ar",// ar or en 
   arTitle: "العنوان ",
   enTitle: "Title",
-  BASE_URL: "http://localhost:3000/",
-  // BASE_URL: "https://sport-api.dev.evento.sa/",
+  // BASE_URL: "http://localhost:3000/",
+  BASE_URL: "https://sport-api.dev.evento.sa/",
   CHECKOUT: "https://www.sport-checkout.dev.evento.sa/buy/",
   TEAM_ID: '007684bf-e762-4d30-bdaa-a27d7e6f2a48',
   HOSTED_SESSION: "https://test-gateway.mastercard.com/form/version/60/merchant/TEST3000000016/session.js?lang=ar",
