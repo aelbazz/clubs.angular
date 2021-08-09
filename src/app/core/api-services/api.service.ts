@@ -10,8 +10,8 @@ import { Observable } from "rxjs";
 export class ApiService {
   constructor(private httpClient: HttpClient) { }
 
-  public getMatches(selectedTeam: string): Observable<any> {
-    const url = environment.BASE_URL + NetworkConfig.GET_ALL_MATCHES + '?current=UPCOMMING&teamHomeId=' + selectedTeam;
+  public getMatches(): Observable<any> {
+    const url = environment.BASE_URL + NetworkConfig.GET_ALL_MATCHES + '?current=UPCOMMING&teamHomeId=' + localStorage.getItem('TEAM_ID');
     return this.httpClient.get<any>(url);
   }
 
@@ -100,8 +100,8 @@ export class ApiService {
     return this.httpClient.get<any>(url);
   }
 
-  public getTeamProfile(teamId: string): Observable<any> {
-    const url = environment.BASE_URL + NetworkConfig.TEAM_PROFILE +  teamId;
+  public getTeamProfile(): Observable<any> {
+    const url = environment.BASE_URL + NetworkConfig.TEAM_PROFILE +  localStorage.getItem('TEAM_ID');
     return this.httpClient.get<any>(url);
   }
 

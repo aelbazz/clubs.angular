@@ -15,5 +15,6 @@ const sharedMComponents: any[] | Type<any> = [
   declarations: [sharedMComponents],
   imports: [CommonModule, TranslateModule.forRoot()],
   exports: [sharedMComponents],
+  providers: []
 })
 export class SharedModule {}
