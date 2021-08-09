@@ -101,13 +101,13 @@
 
   &-downloadBtn {
     padding: 0;
-    color: #8D0B16;
+    color: $primary;
     font-size: 12px;
     line-height: 21px;
 
     &:hover,
     &:focus {
-      color: #8D0B16;
+      color: $primary;
     }
   }
 }

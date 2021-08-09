@@ -12,7 +12,7 @@
     margin-bottom: 10px;
 
     .custom-control-input:checked~.custom-control-label{
-      border-color: #8D0B16;
+      border-color: $primary;
       box-shadow: 0 4px 8px 0 rgba(255, 92, 30, 0.2);
 
     }

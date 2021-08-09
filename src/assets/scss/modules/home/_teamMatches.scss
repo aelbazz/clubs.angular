@@ -1,5 +1,7 @@
 .l-homeTeamMatches {
   padding: 100px 0;
+  background: image("home/matches.svg") #{$right} 85%/100px  no-repeat  ;
+  
 }
 
 .homeTeamMatches {
@@ -30,7 +32,7 @@
 
   &-matchs {
     .matchCard {
-border-radius: 8px;
+      border-radius: 8px;
     }
   }
 }

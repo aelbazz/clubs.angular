@@ -34,6 +34,7 @@ export class AppComponent {
   }
 
   getTeamId() {
+    localStorage.setItem('TEAM_ID', '463b4a44-b13c-4ee8-9c97-02d1be9d7c38')
     if(location.origin.indexOf('alfaisaly') > -1){
       localStorage.setItem('TEAM_ID', '007684bf-e762-4d30-bdaa-a27d7e6f2a48')
     } else if(location.origin.indexOf('alhazim') > -1){

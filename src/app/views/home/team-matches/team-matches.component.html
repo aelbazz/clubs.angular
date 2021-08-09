@@ -1,22 +1,57 @@
 <section class="l-homeTeamMatches">
   <div class="container">
     <div class="homeTeamMatches">
-        <h1 class="homeTeamMatches-title">
-            مباريات الفريق
-          </h1>
-          <p class="homeTeamMatches-desc">
-            تمتع بمشاهده مباريات الفريق من الاستاد وعيش اللحظه.
-      
-          </p>
-          <!-- <div class="homeTeamMatches-controls">
+      <h1 class="homeTeamMatches-title">
+        مباريات الفريق
+      </h1>
+      <p class="homeTeamMatches-desc">
+        تمتع بمشاهده مباريات الفريق من الاستاد وعيش اللحظه.
+
+      </p>
+      <!-- <div class="homeTeamMatches-controls">
             <button type="button" class="btn btn-primary homeTeamMatches-controls-peviousBtn">السابق</button>
             <button type="button" class="btn btn-primary homeTeamMatches-controls-nextBtn">التالي</button>
           </div> -->
-      
-      
-          <div class="homeTeamMatches-matchs">
+
+
+      <div class="homeTeamMatches-matchs">
+
+        <swiper [slidesPerView]="3" [pagination]="{
+          clickable: true
+        }" [mousewheel]="true" [navigation]="true" [keyboard]="true" (swiper)="onSwiper($event)"
+          (slideChange)="onSlideChange()">
+          <ng-template swiperSlide>
+            <div class="mx-3">
+
               <app-match-card></app-match-card>
-          </div>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="mx-3">
+
+              <app-match-card></app-match-card>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="mx-3">
+
+              <app-match-card></app-match-card>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="mx-3">
+
+              <app-match-card></app-match-card>
+            </div>
+          </ng-template>
+          <ng-template swiperSlide>
+            <div class="mx-3">
+
+              <app-match-card></app-match-card>
+            </div>
+          </ng-template>
+        </swiper>
+      </div>
     </div>
   </div>
 </section>

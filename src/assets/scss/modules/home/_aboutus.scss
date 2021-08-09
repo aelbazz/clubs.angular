@@ -1,7 +1,8 @@
-.l-homeAbout {
-  background: $dark;
+.l-homeAbout { 
   padding: 100px 0px;
   color: $light;
+  
+  background: image('home/about-us.svg') center/cover no-repeat $secondary ;
 }
 .homeAbout {
   &-title{

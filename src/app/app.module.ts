@@ -19,12 +19,11 @@ import { ContactusComponent } from './views/home/contactus/contactus.component';
 import { TeamMatchesComponent } from './views/home/team-matches/team-matches.component';
 import { AboutTeamComponent } from './views/home/about-team/about-team.component';
 import { SponsorsComponent } from './views/home/sponsors/sponsors.component';
-import { ChampionshipsComponent } from './views/home/championships/championships.component';
-import { RouterModule } from '@angular/router';
+import { ChampionshipsComponent } from './views/home/championships/championships.component'; 
 import { MyTicketsComponent } from './views/my-tickets/my-tickets.component';
 import { StatusComponent } from './views/reserve-ticket/status/status.component';
 import { CoreModule } from './core/core.module';
-
+import { SwiperModule } from 'swiper/angular';
 export function TranslationLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -42,7 +41,8 @@ export function TranslationLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
-    CoreModule
+    CoreModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent],
