@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from 'src/app/shared/components/not-found/not-found.component';
 import { HomeComponent } from 'src/app/views/home/home.component';
+import { MyTicketsComponent } from 'src/app/views/my-tickets/my-tickets.component';
 import { ChooseTicketComponent } from 'src/app/views/reserve-ticket/choose-ticket/choose-ticket.component';
 import { InfoComponent } from 'src/app/views/reserve-ticket/info/info.component';
 import { PaymentComponent } from 'src/app/views/reserve-ticket/payment/payment.component';
 import { ReserveTicketComponent } from 'src/app/views/reserve-ticket/reserve-ticket.component';
 import { ReviewComponent } from 'src/app/views/reserve-ticket/review/review.component';
 import { SelectClubComponent } from 'src/app/views/reserve-ticket/select-club/select-club.component';
+import { StatusComponent } from 'src/app/views/reserve-ticket/status/status.component';
 
 const routes: Routes = [
   {
@@ -58,6 +60,14 @@ const routes: Routes = [
             component: PaymentComponent,
           },
         ],
+      },
+      {
+        path: 'reserve-status',
+        component: StatusComponent,
+      },
+      {
+        path: 'mytickets',
+        component: MyTicketsComponent,
       },
       {
         path: '**',

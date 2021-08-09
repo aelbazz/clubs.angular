@@ -1,14 +1,18 @@
  // ===================================== floating form control 
- 
+
  .form-group {
 
 
-     label {
-        color: #A1A1A1; 
-        font-size: 14px;
-        letter-spacing: 0;
-        line-height: 25px;
-        margin-bottom: 10px;
-     }
- 
+   label {
+     color: #A1A1A1;
+     font-size: 14px;
+     letter-spacing: 0;
+     line-height: 25px;
+     margin-bottom: 10px;
+   }
+
+ }
+
+ .custom-checkbox .custom-control-label::before {
+   border-radius: 4px;
  }

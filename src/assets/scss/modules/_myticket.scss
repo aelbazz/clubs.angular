@@ -1,0 +1,113 @@
+.myTicket {
+  border-radius: 8px;
+  background-color: #F4F5F7;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 30px;
+
+  &-wrapper {}
+
+  &-part1 {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 12px;
+    display: flex;
+  }
+
+  &-qr {
+    width: 100px;
+    height: 100px;
+
+    .image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &-user {
+    padding: 8px 20px;
+
+    &-name {
+      color: #071927;
+      font-size: 14px;
+      line-height: 25px;
+      margin-bottom: 15px;
+    }
+
+    &-phone,
+    &-email {
+      color: rgba($color: #071927, $alpha: .5);
+      font-size: 14px;
+      line-height: 25px;
+      margin-bottom: 6px;
+    }
+  }
+
+  // =============
+  &-partSeparator {
+    position: relative;
+    flex: 0 0 42px;
+    max-width: 42px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    &-line {
+      width: 0;
+      height: 100%;
+      border-left: 2px dashed rgba($color: #A1A1A1, $alpha: .5);
+      margin: 0 auto;
+    }
+
+    &:after,
+    &::before {
+      content: "";
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: #fff;
+      left: 0;
+      z-index: 10;
+
+
+    }
+
+    &::before {
+      top: -21px;
+    }
+
+    &:after {
+      bottom: -21px;
+    }
+  }
+
+  &-part2 {
+    padding: 20px 30px;
+
+    &-name {
+      color: #071927;
+      font-size: 14px;
+      line-height: 25px;
+      margin-bottom: 5px;
+    }
+
+    &-price {
+      color: #A1A1A1;
+      font-size: 14px;
+      line-height: 25px;
+      margin-bottom: 12px;
+    }
+  }
+
+  &-downloadBtn {
+    padding: 0;
+    color: #8D0B16;
+    font-size: 12px;
+    line-height: 21px;
+
+    &:hover,
+    &:focus {
+      color: #8D0B16;
+    }
+  }
+}

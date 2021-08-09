@@ -21,12 +21,14 @@ import { AboutTeamComponent } from './views/home/about-team/about-team.component
 import { SponsorsComponent } from './views/home/sponsors/sponsors.component';
 import { ChampionshipsComponent } from './views/home/championships/championships.component';
 import { RouterModule } from '@angular/router';
+import { MyTicketsComponent } from './views/my-tickets/my-tickets.component';
+import { StatusComponent } from './views/reserve-ticket/status/status.component';
 
 export function TranslationLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeroComponent, ReserveTicketComponent, PaymentComponent, ReviewComponent, InfoComponent, ChooseTicketComponent, SelectClubComponent, ContactusComponent, TeamMatchesComponent, AboutTeamComponent, SponsorsComponent, ChampionshipsComponent],
+  declarations: [AppComponent, HomeComponent, HeroComponent, ReserveTicketComponent, PaymentComponent, ReviewComponent, InfoComponent, ChooseTicketComponent, SelectClubComponent, ContactusComponent, TeamMatchesComponent, AboutTeamComponent, SponsorsComponent, ChampionshipsComponent, MyTicketsComponent, StatusComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

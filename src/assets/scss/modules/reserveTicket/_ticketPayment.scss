@@ -1,0 +1,54 @@
+.ticketPayment {
+  &-title {
+    color: #071927;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &-radio {
+    padding: 0;
+    margin-bottom: 10px;
+
+    .custom-control-input:checked~.custom-control-label{
+      border-color: #8D0B16;
+      box-shadow: 0 4px 8px 0 rgba(255, 92, 30, 0.2);
+
+    }
+
+    .custom-control-label {
+
+      border: 1px solid rgba($color: #A1A1A1, $alpha: .5);
+      border-radius: 16px;
+      padding: 20px 20px;
+      padding-#{$left}: 55px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      &::after,
+      &:before {
+        position: absolute;
+        top: 2rem;
+        #{$left}: 1.25rem;
+
+      }
+    }
+
+    &-text {
+      color: #071927;
+      font-size: 16px;
+      line-height: 40px;
+      margin-bottom: 0;
+    }
+
+    &-images {
+      .image {
+        display: inline-block;
+        max-height: 40px;
+        margin-#{$left}: 6px;
+      }
+    }
+  }
+}
