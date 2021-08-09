@@ -41,7 +41,7 @@
       width: 21px;
       height: 39px;
       position: relative;
-      right: 107%;
+      #{$left}: 107%;
       top: -60px;
     }
     &::before {
@@ -52,7 +52,7 @@
       width: 21px;
       height: 39px;
       position: relative;
-      left: 40px;
+      #{$right}: 40px;
       top: -19px;
     }
   }
