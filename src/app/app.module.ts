@@ -23,6 +23,7 @@ import { ChampionshipsComponent } from './views/home/championships/championships
 import { RouterModule } from '@angular/router';
 import { MyTicketsComponent } from './views/my-tickets/my-tickets.component';
 import { StatusComponent } from './views/reserve-ticket/status/status.component';
+import { CoreModule } from './core/core.module';
 
 export function TranslationLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -40,7 +41,8 @@ export function TranslationLoaderFactory(http: HttpClient) {
         useFactory: TranslationLoaderFactory,
         deps: [HttpClient],
       },
-    })
+    }),
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent],

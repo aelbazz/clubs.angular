@@ -1,6 +1,10 @@
-<app-header></app-header> 
-<div class="mainContent">  
-    <router-outlet></router-outlet>
-</div>
-<app-footer></app-footer>  
+<ng-container *ngIf="!loadingTeamProfile">
+
+    <app-header [teamProfile]="teamProfile"></app-header>
+    <div class="mainContent">
+        <router-outlet></router-outlet>
+    </div>
+    <app-footer [teamProfile]="teamProfile"></app-footer>
+
+</ng-container>
 <!-- <app-loading></app-loading> -->

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LanguageService } from 'src/app/shared/services/language/language.service'; 
 
@@ -8,6 +8,8 @@ import { LanguageService } from 'src/app/shared/services/language/language.servi
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+
+  @Input() teamProfile: any;
   constructor(private languageService: LanguageService,public router:Router) {
     this.languageService.loadDefaultLangsAndStyles();
   }
