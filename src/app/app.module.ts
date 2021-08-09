@@ -19,21 +19,24 @@ import { ContactusComponent } from './views/home/contactus/contactus.component';
 import { TeamMatchesComponent } from './views/home/team-matches/team-matches.component';
 import { AboutTeamComponent } from './views/home/about-team/about-team.component';
 import { SponsorsComponent } from './views/home/sponsors/sponsors.component';
-import { ChampionshipsComponent } from './views/home/championships/championships.component'; 
+import { ChampionshipsComponent } from './views/home/championships/championships.component';
 import { MyTicketsComponent } from './views/my-tickets/my-tickets.component';
 import { StatusComponent } from './views/reserve-ticket/status/status.component';
 import { CoreModule } from './core/core.module';
 import { SwiperModule } from 'swiper/angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RecaptchaV3Module, RecaptchaFormsModule, RECAPTCHA_V3_SITE_KEY } from 'ng-recaptcha';
 export function TranslationLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
+
 @NgModule({
   declarations: [AppComponent, HomeComponent, HeroComponent, ReserveTicketComponent, PaymentComponent, ReviewComponent, InfoComponent, ChooseTicketComponent, SelectClubComponent, ContactusComponent, TeamMatchesComponent, AboutTeamComponent, SponsorsComponent, ChampionshipsComponent, MyTicketsComponent, StatusComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    HttpClientModule, 
+    HttpClientModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -42,9 +45,13 @@ export function TranslationLoaderFactory(http: HttpClient) {
       },
     }),
     CoreModule,
-    SwiperModule
+    SwiperModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RecaptchaV3Module,
+    RecaptchaFormsModule
   ],
-  providers: [],
+  providers: [{ provide: RECAPTCHA_V3_SITE_KEY, useValue: "6Leu8-0bAAAAADKdTjzMl8iIfwB7dFrLV7wzUWrK" }],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

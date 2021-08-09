@@ -82,14 +82,14 @@ export class ApiService {
     return this.httpClient.post<any>(url, body);
   }
 
-  public contactUs(form): Observable<any> {
+  public contactUs(form: any, recaptcha: any): Observable<any> {
     let body = {
       "fullName": form.fullName,
       "title": form.title,
       "message": form.message,
       "email": form.email,
       "mobile": form.mobile,
-      "recaptcha": form.recaptcha
+      "recaptcha": recaptcha
   }
     const url = environment.BASE_URL + NetworkConfig.CONTACT_US ;
     return this.httpClient.post<any>(url, body);
