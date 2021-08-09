@@ -10,6 +10,7 @@
   &-radio {
     padding: 0;
     margin-bottom: 10px;
+    cursor: pointer;
 
     .custom-control-input:checked~.custom-control-label{
       border-color: $primary;
