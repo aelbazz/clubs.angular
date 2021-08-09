@@ -88,6 +88,14 @@
     margin-bottom: 10px;
   }
 }
-
+.vertical-line {
+  &-dashed {
+    border-left: 3px dashed rgba($color: $dark, $alpha: 0.3);
+    height: 80%;
+    position: absolute;
+    #{$right}: 40%;
+    top: 10px;
+  }
+}
 
  //  ==========
