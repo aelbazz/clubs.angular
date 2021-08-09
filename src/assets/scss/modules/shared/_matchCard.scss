@@ -6,7 +6,36 @@
   margin-bottom: 10px;
   padding: 20px 12px;
 
+  // ======================
+  &.matchCard-horizontal {
+    border-radius:  8px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 
+    .matchCard-content {
+      flex: 0 0 600px;
+      max-width: 600px;
+      margin-bottom: 0;
+    }
+
+    .matchCard-footer {
+      flex: 0 0 340px;
+      max-width: 340px;
+      flex-direction: column;
+      border-top-width: 0;
+      border-#{$left}-width: 1px;
+      padding: 25px 40px;
+
+      &-stadiumName,
+      &-date {
+        text-align: $left;
+        .icon {
+          margin-#{$right}: 6px;
+        }
+      }
+    }
+  }
 
   &-wrapper {
     position: relative;
@@ -14,7 +43,7 @@
 
 
   &-content {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   &-logo {
@@ -80,8 +109,16 @@
     font-size: 14px;
     line-height: 25px;
     display: flex;
-    border-top: 1px solid rgba($color: #E0E0E0, $alpha: .44);
+    border: 0 solid rgba($color: #E0E0E0, $alpha: .44);
+    border-top-width: 1px;
     justify-content: space-between;
+
+    &-stadiumName,
+    &-date {
+      .icon {
+        margin-#{$right}: 6px;
+      }
+    }
 
     &-stadiumName {
 
@@ -106,5 +143,7 @@
     width: 100%;
     padding: 15px 40px;
   }
+
+
 
 }

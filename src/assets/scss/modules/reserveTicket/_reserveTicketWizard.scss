@@ -1,6 +1,13 @@
+.l-reserveTicketWizard {
+  padding-top: 70px;
+  padding-bottom: 50px;
+
+}
+
 .reserveTicketWizard {
   position: relative;
   display: flex;
+  margin-bottom: 45px;
 
   &-title {
     color: #071927;
@@ -8,19 +15,21 @@
     font-weight: bold;
     line-height: 47px;
   }
- 
+
 
   &-tabs {
     flex: 0 0 260px;
     max-width: 260px;
     border: 1px solid rgba($color: #A1A1A1, $alpha:.5);
-    background-color: rgba($color: #A1A1A1, $alpha:.5);
-    border-radius: 0 16px 16px 0;
+    background-color: rgba($color: #A1A1A1, $alpha:.1);
+    border-top-#{$left}-radius: 16px;
+    border-bottom-#{$left}-radius: 16px;
     border-#{$right}-width: 0;
     padding: 30px;
     color: #A1A1A1;
     font-size: 14px;
     line-height: 23px;
+
   }
 
   &-items {
@@ -33,32 +42,87 @@
   }
 
   &-item {
-    border-top: 1px solid #E4E4E4;
-    border-bottom: 1px solid #E4E4E4;
-    padding: 15px 10px;
-    font-size: 18px;
-    line-height: 24px;
-    color: $primary;
+    position: relative;
+    margin-bottom: 32px;
 
 
-    &:not(:last-child) {}
+    &:not(:last-child) {
+      &:after {
+        content: "";
+        position: absolute;
+        #{$left}: 19.5px;
+        top: calc(100% + 5px);
+        display: block;
+        height: 20px;
+        width: 1px;
+        z-index: 10;
+        opacity: 0.5;
+        background-color: #A1A1A1;
+
+      }
+    }
 
 
     &.active {
-      background-color: rgba($color: $primary, $alpha: .05);
-      border-bottom-color: currentColor;
+      .reserveTicketWizard-step {
+        border-color: darken(desaturate(adjust-hue($primary, -349deg), 71), 17);
+
+        .number {
+          background-color: $primary;
+        }
+      }
+
+      .reserveTicketWizard-label {
+        color: #071927;
+        font-weight: bold;
+      }
     }
 
-    &.active~.popup-header-item {
-      color: #C7C7C7;
+    // ====================================
+    &.active~.reserveTicketWizard-item {
+      .reserveTicketWizard-step {
+        border-color: #A1A1A1;
+
+        .number {
+          background-color: rgba($color: #A1A1A1, $alpha:.1);
+          color: #071927;
+        }
+      }
+
+      .reserveTicketWizard-label {
+        color: #071927;
+      }
     }
   }
- 
+
+  &-label {
+    color: $success;
+    font-size: 16px;
+    line-height: 28px;
+  }
 
   &-step {
     display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $success;
+    padding: 8px;
+    border-radius: 50%;
+    margin-#{$right}: 15px;
+    margin-bottom: 0;
 
-    .number {}
+
+    .number {
+      width: 22px;
+      height: 22px;
+      background-color: $success;
+      color: #fff;
+      display: inline-block;
+      text-align: center;
+      line-height: 25px;
+      border-radius: 50%;
+
+    }
   }
 
   &-icon {
@@ -81,19 +145,25 @@
   &-content {
     padding: 30px;
     border: 1px solid rgba($color: #A1A1A1, $alpha:.5);
-    border-radius: 16px 0 0 16px;
+    border-top-#{$right}-radius: 16px;
+    border-bottom-#{$right}-radius: 16px;
     flex: 0 0 calc(100% - 260px);
     max-width: calc(100% - 260px);
     background: #fff;
-    &-title{
-      color: $primary; 
+
+    &-title {
+      color: $primary;
       font-size: 20px;
-      font-weight: bold; 
+      font-weight: bold;
       line-height: 36px;
       margin-bottom: 35px;
     }
   }
 
+  &-footer{
+    display: flex;
+    justify-content: space-between;
+  }
   &-prevBtn,
   &-nextBtn {
     width: 100%;
@@ -109,4 +179,11 @@
     }
   }
 
+  &-prevBtn {
+    background-color: #A1A1A1;
+    color: #fff;
+    border-color: #A1A1A1;
+  }
+
+  &-nextBtn {}
 }

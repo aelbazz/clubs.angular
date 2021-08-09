@@ -8,6 +8,8 @@
     padding: 20px;
     transition:.5s;
     transition-property: transform, text-shadow;
+    cursor: pointer;
+
     &:hover {
       border: 1px solid $primary;
       box-shadow: 0 0 11px $secondary;

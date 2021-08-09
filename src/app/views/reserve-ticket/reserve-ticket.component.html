@@ -1,55 +1,55 @@
-<section class="">
+<section class="l-reserveTicketWizard">
   <div class="container">
     <!-- --------------------------------------------------------------------- -->
-    <div class="reserveTicketBanner">
-      <div class="reserveTicketBanner-main">
-        <div class="reserveTicketBanner-content">
-          <div class="row ">
-            <div class="col-4">
-              <div class="reserveTicketBanner-logo">
-                <img src="assets/images/DUMMY/alfaisaly-logo.png" alt="" class="image">
-              </div>
-              <h5 class="reserveTicketBanner-club">الفيصلي</h5>
 
+    <div class="matchCard  matchCard-horizontal">
+
+      <div class="matchCard-content">
+        <div class="row text-center">
+          <div class="col-3">
+            <div class="matchCard-logo">
+              <img src="assets/images/DUMMY/alfaisaly-logo.png" alt="" class="image">
             </div>
+            <h5 class="matchCard-club">الفيصلي</h5>
 
-            <div class="col-4">
-              <div class="reserveTicketBanner-vsLabel">
-                <span class="reserveTicketBanner-dash">-</span>
-                <span class="reserveTicketBanner-status">القادمة </span>
-                <span class="reserveTicketBanner-dash">-</span>
-              </div>
-              <p class="reserveTicketBanner-status text-danger ">كأس خادم الحرمين الشريفين</p>
-
-            </div>
-
-            <div class="col-4">
-              <div class="reserveTicketBanner-logo">
-                <img src="assets/images/DUMMY/alnassr_logo.png" alt="" class="image">
-              </div>
-              <h5 class="reserveTicketBanner-club">النصر</h5>
-
-            </div>
-
+            <!-- <p class="matchCard-goals">3</p> -->
 
           </div>
+
+          <div class="col-6">
+            <div class="matchCard-vsLabel">
+              <span class="matchCard-dash">-</span>
+              <span class="matchCard-status">القادمة </span>
+              <span class="matchCard-dash">-</span>
+            </div>
+            <p class="matchCard-tournamentName ">كأس خادم الحرمين الشريفين</p>
+
+          </div>
+
+          <div class="col-3">
+            <div class="matchCard-logo">
+              <img src="assets/images/DUMMY/alnassr_logo.png" alt="" class="image">
+            </div>
+            <h5 class="matchCard-club">النصر</h5>
+
+            <!-- <p class="matchCard-goals">2</p> -->
+
+          </div>
+
+
         </div>
       </div>
-      <div class="reserveTicketBanner-details">
-        <h2 class="reserveTicketBanner-item">
-          <i class="far fa-calendar-alt"></i>
-          <span class="text">
-            الخميس 24 محرم 1442 - 13:00
+      <div class="matchCard-footer">
+        <p class="matchCard-footer-stadiumName">
+          <img src="assets/images/icons/stadium.svg" alt="" class="icon">
+          ملعب مرسول بارك
 
-          </span>
-        </h2>
-        <h2 class="reserveTicketBanner-item">
-          <i class="far fa-calendar-alt"></i>
-          <span class="text">
-            الخميس 24 محرم 1442 - 13:00
-
-          </span>
-        </h2>
+        </p>
+        <p class="matchCard-footer-date">
+          <img src="assets/images/icons/calendar.svg" alt="" class="icon">
+          April 27,2021 |
+          01:38
+          AM</p>
       </div>
     </div>
 
@@ -65,10 +65,10 @@
           <!-- steps titles  -->
           <li *ngFor="let title of ['selectClub', 'chooseTicket', 'info', 'review', 'payment'];let idx=index"
             class="  reserveTicketWizard-item" [ngClass]="{'active': idx === currentStep}">
-            <span class="reserveTicketWizard-title">{{"reserveTicket." + title | translate }}</span>
             <p class="reserveTicketWizard-step">
               <span class="number">{{idx + 1}} </span>
             </p>
+            <span class="reserveTicketWizard-label">{{"reserveTicket." + title | translate }}</span>
           </li>
         </ul>
       </div>
@@ -76,9 +76,15 @@
         <router-outlet></router-outlet>
       </div>
     </div>
-    <div class="popup-footer">
-      <button type="button" class="btn reserveTicketWizard-nextBtn">{{"general.next" | translate }}</button>
-      <button type="button" class="btn reserveTicketWizard-peviousBtn">{{"general.previous" | translate }}</button>
+    <div class="reserveTicketWizard-footer">
+      <button type="button" class="btn reserveTicketWizard-prevBtn">
+        <i class="fas fa-long-arrow-alt-right mr-3 align-middle"></i>
+        {{"general.previous" | translate }}
+      </button>
+      <button type="button" class="btn btn-primary reserveTicketWizard-nextBtn ">
+        {{"general.next" | translate }}
+        <i class="fas fa-long-arrow-alt-left ml-3 align-middle"></i>
+      </button>
     </div>
 
     <!-- --------------------------------------------------------------------- -->
